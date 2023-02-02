@@ -1,46 +1,52 @@
-import java.util.HashMap;
-import java.util.Map;
+
+import java.util.Arrays;
+import java.util.HashSet;
 
 public class Solution {
     public boolean isMatch(String s, String p) {
 
-        if (s.equals(p))
-            return true;
+        HashSet<Character> set = new HashSet<>();
 
-        Map<Character, Integer> maps = new HashMap<Character, Integer>();
+        int sIndex = s.length() - 1;
+        int pIndex = p.length() - 1;
 
-        // 先把有 * 的字元和位置給記錄起來
-        for (int i = 1; i < p.length(); i++) {
+        while (sIndex >= 0) {
 
-            if (p.charAt(i) != '*')
-                continue;
+            System.out.println();
+            System.out.println("sIndex: " + sIndex);
+            System.out.println("pIndex: " + pIndex);
 
-            maps[Character.valueOf(p.charAt(i))] = i;
+            if (pIndex >= 0) {
 
-            char c = p.charAt(i);
+                if (p.charAt(pIndex) == '.') {
+                    sIndex--;
+                    pIndex--;
+                    System.out.println("遇到'.'");
+                    continue;
+                }
 
-            maps[c] = 1;
-        }
+                if (p.charAt(pIndex) == '*') {
+                    set.add(p.charAt(--pIndex));
+                    pIndex--;
+                    System.out.println("遇到'*': " + Arrays.toString(set.toArray()));
+                    continue;
+                }
+            }
 
-        for (int sIndex = 0, pIndex = 0; sIndex < s.length(); sIndex++) {
-
-            if (sIndex >= p.length())
-                return false;
-
-            if (p.charAt(pIndex) == '.') {
-                pIndex++;
+            if (set.contains('.') || set.contains(s.charAt(sIndex))) {
+                sIndex--;
+                System.out.println("在豁免字元中有找到當前字元");
                 continue;
             }
 
-            if (p.charAt(i) == '*')
-                return true;
-
-            if (s.charAt(i) != p.charAt(i))
+            if (pIndex < 0 || s.charAt(sIndex) != p.charAt(pIndex))
                 return false;
 
-            pIndex++;
+            sIndex--;
+            pIndex--;
         }
 
         return true;
     }
+
 }

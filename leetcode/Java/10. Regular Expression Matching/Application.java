@@ -16,5 +16,11 @@ class Application {
 
         // example 4
         System.out.println(sol.isMatch("aab", "c*a*b"));
+
+        // example 5
+        System.out.println(sol.isMatch("mississippi", "mis*is*p*."));
+
+        // exameple 6
+        System.out.println(sol.isMatch("aaa", "aaaa"));
     }
 }
