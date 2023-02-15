@@ -2,6 +2,9 @@
 public class App {
 
     public static void main(String[] args) {
+        /*
+         * 傳入一整數陣列, 其中兩數相加, 等於目標值, 求兩數的index
+         */
         Solution sol = new Solution();
 
         // example 1

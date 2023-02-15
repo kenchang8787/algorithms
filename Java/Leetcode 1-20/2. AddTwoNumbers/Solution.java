@@ -24,10 +24,12 @@ public class Solution {
 
         ListNode result = null;
 
+        // 若兩個list, 當前位數皆有值
         if (listNode1 != null && listNode2 != null) {
+            // 當前位數相加
             result = new ListNode(listNode1.val + listNode2.val);
 
-            // 處理進位
+            // 若當前位數相加大於9, 則處理進位
             if (result.val > 9) {
                 result.val -= 10;
 
@@ -39,9 +41,13 @@ public class Solution {
 
             // 繼續處理下一位數
             result.next = listNodeSum(listNode1.next, listNode2.next);
-        } else if (listNode1 != null && listNode2 == null) {
+        }
+        // 只有list1, 當前位數有值
+        else if (listNode1 != null && listNode2 == null) {
             result = listNodeSum(listNode1, new ListNode(0));
-        } else if (listNode1 == null && listNode2 != null) {
+        }
+        // 只有list2, 當前位數有值
+        else if (listNode1 == null && listNode2 != null) {
             result = listNodeSum(new ListNode(0), listNode2);
         }
 

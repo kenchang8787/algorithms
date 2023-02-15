@@ -1,5 +1,10 @@
 
 public class App {
+    /*
+     * 傳入兩個 single linked list, 表示一整數的位數
+     * 例 [2, 4, 3] 即為整數 342
+     * 求兩個list的整數相加
+     */
     public static void main(String[] args) {
 
         var sol = new Solution();
