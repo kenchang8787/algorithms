@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/1. TwoSum" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/10. Regular Expression Matching" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/11. Container With Most Water" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/12. Integer to Roman" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/13. Roman to Integer" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/14. Longest Common Prefix" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/15. 3Sum" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/16. 3Sum Closest" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/17. Letter Combinations of a Phone Number" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/18. 4Sum" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/19. Remove Nth Node From End of List" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/2. AddTwoNumbers" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/3. Longest Substring Without Repeating Characters" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/4. Median of Two Sorted Arrays" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5. Longest Palindromic Substring" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/6. Zigzag Convertion" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/7. Reverse Integer" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/8. String to Integer (atoi)" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/9. Palindrome Number" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
